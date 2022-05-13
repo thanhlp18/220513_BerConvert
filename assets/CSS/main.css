@@ -58,6 +58,10 @@ body {
     margin-top: 16px !important;
 }
 
+.margin-16-t {
+    margin-left: 16px !important;
+}
+
 
 .primary-btn {
     width: fit-content;
@@ -102,6 +106,10 @@ body {
 
 }
 
+.app__subcontrol-wrap {
+    display: inline-block;
+}
+
 .app__control-from > label,
 .app__control-to > label{
     display: flex;
@@ -121,6 +129,6 @@ body {
 /* app_result */
 
 .app_result {
-    width: 100%;
+    width: calc(100% - 16px);
     
 }
