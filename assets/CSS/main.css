@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #FDB813;
+    --background-color: #F4F3EE;
+    --text-color: #1A1200;
+    --primary-border-properties: solid 2px #FDB813;
+    --second-border-properties: solid 2px #1A1200;
+    --border-radius-properties: 8px;
+    --main-shadow-properties: 0 0 30px 1 rgba(0,0,0,0.15);
+    --second-shadow-properties: 0 4px 4px 0 rgba(0,0,0,0.25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+
+
+/* Common */
+::placeholder,
+.lato-20-300 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.lato-20-400 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.lato-24-700 {
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.lato-36-700 {
+    font-weight: 700;
+    font-size: 3.6rem;
+}
+
+.lato-48-700 {
+    font-weight: 700;
+    font-size: 4.8rem;
+}
+
+.margin-16-t {
+    margin-top: 16px !important;
+}
+
+
+.primary-btn {
+    width: fit-content;
+    padding: 1.2rem 2.4rem;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border: var(--second-border-properties);
+    border-radius: var(--border-radius-properties);
+    box-shadow: var(--second-shadow-properties);
+}
+
+.second-btn {
+    width: fit-content;
+    padding: 1.2rem 2.4rem;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: var(--primary-border-properties);
+    border-radius: var(--border-radius-properties);
+    box-shadow: var(--second-shadow-properties);
+}
+
+
+/* App */
+.app__background {
+    background-image: url('/assets/Image/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.app__container {
+    padding: 8rem 6rem;
+    margin: 4.8rem 0;
+    background-color: var(--background-color);
+    border: var(--second-border-properties);
+    border-radius: var(--border-radius-properties);
+}
+
+
+/* App control */
+.app__control {
+
+}
+
+.app__control-from > label,
+.app__control-to > label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.app__control-to {
+    margin-left: 2rem;
+}
+
+/* App input */
+.app__input > input{
+    width: 100%;
+}
+
+/* app_result */
+
+.app_result {
+    width: 100%;
+    
+}

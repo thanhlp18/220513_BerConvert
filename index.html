@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berconvert</title>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/CSS/main.css">
+    <!-- Iconfy -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- Respondsive -->
+    <link rel="stylesheet" href="./assets/CSS/respondsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 " style="z-index: 1000;">
+        <div class="container-fluid ">
+          <a class="navbar-brand lato-24-700" href="#">Berconvert</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-text" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active lato-20-400" aria-current="page" href="#">Decimal Convert</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li> -->
+            </ul>
+            <!-- <span class="navbar-text">
+              Navbar text with an inline element
+            </span> -->
+          </div>
+        </div>
+    </nav>
+
+
+    <!-- App -->
+    <div class="container-fluid app__background">
+
+        <div class="container">
+            <div class="row">
+              <div class="col-2">
+              </div>
+              <div class="col-8 app__container">
+                    <h1 class="lato-36-700">Decimal to Binary converter</h1>
+
+                    <form action="" class="app__input-wrap">
+                        <div class="app__control d-flex margin-16-t">
+                            <div class="app__control-from">
+                                <label for="unit-from" class="lato-24-700">From</lable>
+                                <select id="unit-from" class=" lato-20-300 second-btn" name="unit-from">
+                                    <option value="Decimal">Decimal</option>
+                                    <option value="Bianry">Bianry</option>
+                                    <option value="Octal">Octal</option>
+                                    <option value="Hexadecimal">Hexadecimal</option>
+                                    <option value="Text">Text</option>
+                                </select>
+                            </div>
+                            <div class="app__control-to">
+                                <label for="unit-to" class="lato-24-700">To</lable>
+                                    <select id="unit-to" class="second-btn lato-20-300" name="unit-to">
+                                        <option value="Bianry">Bianry</option>
+                                        <option value="Decimal">Decimal</option>
+                                        <option value="Octal">Octal</option>
+                                        <option value="Hexadecimal">Hexadecimal</option>
+                                        <option value="Text">Text</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="app__input margin-16-t">
+                            <h3 class="lato-24-700">Enter decimal number</h3>
+                            <input type="number" class="second-btn lato-20-300" placeholder="Enter decimal number" required></input>
+                        </div>
+                        <div class="app__button-wrap margin-16-t">
+                            <button type="submit" class="primary-btn lato-24-700">Convert</button>
+                            <button type="reset" class="second-btn lato-24-700">Reset</button>
+                            <div class="second-btn lato-24-700 d-inline-block" style="cursor: pointer;">Swap</div>
+                        </div>
+                    </form>
+
+                    <div class="app_result primary-btn lato-20-400 margin-16-t">app_result</div>
+              </div>
+              <div class="col-2">
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

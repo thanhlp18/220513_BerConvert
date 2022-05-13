@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px){
+    :root {
+        font-size: 50%;
+    }
+
+    .app__control {
+        flex-direction: column;
+    }
+
+    .app__control-to {
+        margin-left: 0;
+    }
+
+    .col-2 {
+        width: 0;
+    }
+
+    .col-8 {
+        width: 100%;
+    }
+}
