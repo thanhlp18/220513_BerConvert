@@ -77,7 +77,7 @@ body {
     width: fit-content;
     padding: 1.2rem 2.4rem;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background-color: white;
     border: var(--primary-border-properties);
     border-radius: var(--border-radius-properties);
     box-shadow: var(--second-shadow-properties);
